@@ -58,6 +58,23 @@ export function decorateMain(main) {
 }
 
 /**
+ * Set grid wrappers to header, body and footer.
+ */
+export function decorateBody() {
+  const container = document.createElement('div');
+  container.classList.add('root', 'responsivegrid');
+  const subcontainer = document.createElement('div');
+  subcontainer.classList.add('aem-Grid', 'aem-Grid--12', 'aem-Grid--default--12');
+
+  [...document.body.children].forEach(node => {
+    subcontainer.appendChild(node);
+  });
+
+  container.appendChild(subcontainer);
+  document.body.appendChild(container);
+}
+
+/**
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
  */
@@ -104,6 +121,7 @@ function loadDelayed() {
 }
 
 async function loadPage() {
+  decorateBody();
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
