@@ -15,6 +15,8 @@ export default async function decorate(block) {
   if (resp.ok) {
     const html = await resp.text();
 
+    console.log('footer', footer);
+
     // decorate footer DOM
     const footer = document.createElement('div');
     footer.innerHTML = html;
