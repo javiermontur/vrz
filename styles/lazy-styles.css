@@ -1,1 +1,30 @@
 /* below the fold CSS goes here */
+/*
+  This CSS resource incorporates links to font software which is the valuable copyrighted
+  property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+  redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+  Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+  
+*/
+@font-face {
+font-family: "BrandFont-Text";
+font-display: swap;
+src: url("//scache1.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeTX-Regular.eot?#iefix") format("embedded-opentype"), url("//scache1.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeTX-Regular.woff2") format("woff2"), url("//scache1.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeTX-Regular.woff") format("woff"), url("//scache1.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeTX-Regular.ttf") format("truetype");
+}
+@font-face {
+font-family: "BrandFont-Text";
+font-display: swap;
+font-weight: bold;
+src: url("//scache2.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeTX-Bold.eot?#iefix") format("embedded-opentype"), url("//scache2.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeTX-Bold.woff2") format("woff2"), url("//scache2.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeTX-Bold.woff") format("woff"), url("//scache2.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeTX-Bold.ttf") format("truetype");
+}
+@font-face {
+font-family: 'BrandFont-Display';
+font-display: swap;
+src: url("https://scache1.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeDS-Regular.eot?#iefix") format("embedded-opentype"), url("https://scache1.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeDS-Regular.woff2") format("woff2"), url("https://scache1.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeDS-Regular.woff") format("woff"), url("https://scache1.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeDS-Regular.ttf") format("truetype");
+}
+@font-face {
+font-family: 'BrandFont-Display';
+font-display: swap;
+font-weight: bold;
+src: url("https://scache2.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeDS-Bold.eot?#iefix") format("embedded-opentype"), url("https://scache2.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeDS-Bold.woff2") format("woff2"), url("https://scache2.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeDS-Bold.woff") format("woff"), url("https://scache2.vzw.com/globalnav/fonts/verizon-nhg/VerizonNHGeDS-Bold.ttf") format("truetype");
+}
