@@ -1,0 +1,1489 @@
+@font-face {
+    font-family: verizon-icons;
+    src: url(//respframework.verizon.com/fonts/verizon-icons/fonts/verizon-icons.eot?i9qzlp=);
+    src: url(//respframework.verizon.com/fonts/verizon-icons/fonts/verizon-icons.eot?i9qzlp=#iefix) format("embedded-opentype"),url(//respframework.verizon.com/fonts/verizon-icons/fonts/verizon-icons.ttf?i9qzlp=) format("truetype"),url(//respframework.verizon.com/fonts/verizon-icons/fonts/verizon-icons.woff?i9qzlp=) format("woff"),url(//respframework.verizon.com/fonts/verizon-icons/fonts/verizon-icons.svg?i9qzlp=#verizon-icons) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+.Icon {
+    font-family: verizon-icons!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.Icon--accessibility:before {
+    content: "\E900"
+}
+
+.Icon--add-folder:before {
+    content: "\E901"
+}
+
+.Icon--add-to-favorite:before {
+    content: "\E902"
+}
+
+.Icon--add-user:before {
+    content: "\E903"
+}
+
+.Icon--agriculture-leaves:before {
+    content: "\E904"
+}
+
+.Icon--agriculture-tractor:before {
+    content: "\E905"
+}
+
+.Icon--agriculture-vineyard:before {
+    content: "\E906"
+}
+
+.Icon--alert-notification:before {
+    content: "\E907"
+}
+
+.Icon--alert:before {
+    content: "\E908"
+}
+
+.Icon--announcement:before {
+    content: "\E909"
+}
+
+.Icon--archive:before {
+    content: "\E90A"
+}
+
+.Icon--artboard:before {
+    content: "\E90B"
+}
+
+.Icon--asset-tracking:before {
+    content: "\E90C"
+}
+
+.Icon--at:before {
+    content: "\E90D"
+}
+
+.Icon--award:before {
+    content: "\E90E"
+}
+
+.Icon--awareness:before {
+    content: "\E90F"
+}
+
+.Icon--banking:before {
+    content: "\E910"
+}
+
+.Icon--battery:before {
+    content: "\E911"
+}
+
+.Icon--bill-down:before {
+    content: "\E912"
+}
+
+.Icon--bill-up:before {
+    content: "\E913"
+}
+
+.Icon--bluetooth:before {
+    content: "\E914"
+}
+
+.Icon--bonus-data:before {
+    content: "\E915"
+}
+
+.Icon--bot:before {
+    content: "\E916"
+}
+
+.Icon--box-open:before {
+    content: "\E917"
+}
+
+.Icon--business-continuity:before {
+    content: "\E918"
+}
+
+.Icon--calendar:before {
+    content: "\E919"
+}
+
+.Icon--caller-id:before {
+    content: "\E91A"
+}
+
+.Icon--camera:before {
+    content: "\E91B"
+}
+
+.Icon--card-scanner:before {
+    content: "\E91C"
+}
+
+.Icon--carryover-data:before {
+    content: "\E91D"
+}
+
+.Icon--cell-tower .path1:before {
+    content: "\E91E";
+    color: #000
+}
+
+.Icon--cell-tower .path2:before {
+    content: "\E91F";
+    margin-left: -.6259765625em;
+    color: #000
+}
+
+.Icon--cell-tower .path3:before {
+    content: "\E920";
+    margin-left: -.6259765625em;
+    color: #000
+}
+
+.Icon--cell-tower .path4:before {
+    content: "\E921";
+    margin-left: -.6259765625em;
+    color: #1c1b1a
+}
+
+.Icon--chat:before {
+    content: "\E922"
+}
+
+.Icon--checkmark_alt:before {
+    content: "\E923"
+}
+
+.Icon--checkmark-alt:before {
+    content: "\E924"
+}
+
+.Icon--checkmark:before {
+    content: "\E925"
+}
+
+.Icon--clock:before {
+    content: "\E926"
+}
+
+.Icon--close-alt:before {
+    content: "\E927"
+}
+
+.Icon--close:before {
+    content: "\E928"
+}
+
+.Icon--cloud-alt:before {
+    content: "\E929"
+}
+
+.Icon--cloud:before {
+    content: "\E92A"
+}
+
+.Icon--compass:before {
+    content: "\E92B"
+}
+
+.Icon--compose:before {
+    content: "\E92C"
+}
+
+.Icon--condition-based-maintenance-wrench:before {
+    content: "\E92D"
+}
+
+.Icon--condition-based-maintenance:before {
+    content: "\E92E"
+}
+
+.Icon--connect-parts:before {
+    content: "\E92F"
+}
+
+.Icon--connect:before {
+    content: "\E930"
+}
+
+.Icon--construction-hammer:before {
+    content: "\E931"
+}
+
+.Icon--construction:before {
+    content: "\E932"
+}
+
+.Icon--creditcard:before {
+    content: "\E933"
+}
+
+.Icon--crop:before {
+    content: "\E934"
+}
+
+.Icon--data-boost:before {
+    content: "\E935"
+}
+
+.Icon--device-activity:before {
+    content: "\E936"
+}
+
+.Icon--device-protection:before {
+    content: "\E937"
+}
+
+.Icon--devices-addons:before {
+    content: "\E938"
+}
+
+.Icon--digital-signage-car:before {
+    content: "\E939"
+}
+
+.Icon--digital-signage:before {
+    content: "\E93A"
+}
+
+.Icon--dining:before {
+    content: "\E93B"
+}
+
+.Icon--display:before {
+    content: "\E93C"
+}
+
+.Icon--document-cloud .path1:before {
+    content: "\E93D";
+    color: #020000
+}
+
+.Icon--document-cloud .path2:before {
+    content: "\E93E";
+    margin-left: -1em;
+    color: #1c1b1a
+}
+
+.Icon--document-compliance:before {
+    content: "\E93F"
+}
+
+.Icon--document:before {
+    content: "\E940"
+}
+
+.Icon--documents:before {
+    content: "\E941"
+}
+
+.Icon--down-arrow:before {
+    content: "\E942"
+}
+
+.Icon--download:before {
+    content: "\E943"
+}
+
+.Icon--drag-and-drop:before {
+    content: "\E944"
+}
+
+.Icon--drone-camera:before {
+    content: "\E945"
+}
+
+.Icon--duplicate:before {
+    content: "\E946"
+}
+
+.Icon--edit:before {
+    content: "\E947"
+}
+
+.Icon--education-curriculum:before {
+    content: "\E948"
+}
+
+.Icon--education:before {
+    content: "\E949"
+}
+
+.Icon--electric-power:before {
+    content: "\E94A"
+}
+
+.Icon--electric-utility:before {
+    content: "\E94B"
+}
+
+.Icon--email:before {
+    content: "\E94C"
+}
+
+.Icon--energy-science:before {
+    content: "\E94D"
+}
+
+.Icon--energy-utilities:before {
+    content: "\E94E"
+}
+
+.Icon--enterprise:before {
+    content: "\E94F"
+}
+
+.Icon--export:before {
+    content: "\E950"
+}
+
+.Icon--favorite:before {
+    content: "\E951"
+}
+
+.Icon--federal-defense:before {
+    content: "\E952"
+}
+
+.Icon--filter-off .path1:before {
+    content: "\E953";
+    color: #b3b3b3
+}
+
+.Icon--filter-off .path2:before {
+    content: "\E954";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--filter:before {
+    content: "\E955"
+}
+
+.Icon--financial:before {
+    content: "\E956"
+}
+
+.Icon--fine-art:before {
+    content: "\E957"
+}
+
+.Icon--fingerprint-sensor:before {
+    content: "\E958"
+}
+
+.Icon--fire:before {
+    content: "\E959"
+}
+
+.Icon--fit-to-zone:before {
+    content: "\E95A"
+}
+
+.Icon--flag:before {
+    content: "\E95B"
+}
+
+.Icon--fleet-tracking:before {
+    content: "\E95C"
+}
+
+.Icon--fleet:before {
+    content: "\E95D"
+}
+
+.Icon--flexibility-four-arrows:before {
+    content: "\E95E"
+}
+
+.Icon--flexibility-rectangles:before {
+    content: "\E95F"
+}
+
+.Icon--flexibility-three-arrows:before {
+    content: "\E960"
+}
+
+.Icon--flexibility-two-arrows:before {
+    content: "\E961"
+}
+
+.Icon--fullscreen:before {
+    content: "\E962"
+}
+
+.Icon--gaming:before {
+    content: "\E963"
+}
+
+.Icon--gas:before {
+    content: "\E964"
+}
+
+.Icon--gateway:before {
+    content: "\E965"
+}
+
+.Icon--gift:before {
+    content: "\E966"
+}
+
+.Icon--gifted-data:before {
+    content: "\E967"
+}
+
+.Icon--government:before {
+    content: "\E968"
+}
+
+.Icon--grid-view:before {
+    content: "\E969"
+}
+
+.Icon--group:before {
+    content: "\E96A"
+}
+
+.Icon--growth:before {
+    content: "\E96B"
+}
+
+.Icon--hackers:before {
+    content: "\E96C"
+}
+
+.Icon--healthcare-corporate:before {
+    content: "\E96D"
+}
+
+.Icon--healthcare-general:before {
+    content: "\E96E"
+}
+
+.Icon--history:before {
+    content: "\E96F"
+}
+
+.Icon--home-internet:before {
+    content: "\E970"
+}
+
+.Icon--home:before {
+    content: "\E971"
+}
+
+.Icon--ideas-solutions:before {
+    content: "\E972"
+}
+
+.Icon--in-store-pickup:before {
+    content: "\E973"
+}
+
+.Icon--incoming-call:before {
+    content: "\E974"
+}
+
+.Icon--industry:before {
+    content: "\E975"
+}
+
+.Icon--info:before {
+    content: "\E976"
+}
+
+.Icon--insurance:before {
+    content: "\E977"
+}
+
+.Icon--intelligent-tracking:before {
+    content: "\E978"
+}
+
+.Icon--international-long-distance:before {
+    content: "\E979"
+}
+
+.Icon--international:before {
+    content: "\E97A"
+}
+
+.Icon--iot:before {
+    content: "\E97B"
+}
+
+.Icon--join-call:before {
+    content: "\E97C"
+}
+
+.Icon--k12-education:before {
+    content: "\E97D"
+}
+
+.Icon--kids-stroller:before {
+    content: "\E97E"
+}
+
+.Icon--landscape:before {
+    content: "\E97F"
+}
+
+.Icon--laptop-controls .path1:before {
+    content: "\E980";
+    color: #000
+}
+
+.Icon--laptop-controls .path2:before {
+    content: "\E981";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--laptop-controls .path3:before {
+    content: "\E982";
+    margin-left: -1em;
+    color: #020000
+}
+
+.Icon--laptop-controls .path4:before {
+    content: "\E983";
+    margin-left: -1em;
+    color: #020000
+}
+
+.Icon--laptop-controls .path5:before {
+    content: "\E984";
+    margin-left: -1em;
+    color: #020000
+}
+
+.Icon--laptop-controls .path6:before {
+    content: "\E985";
+    margin-left: -1em;
+    color: #020000
+}
+
+.Icon--laptop-controls .path7:before {
+    content: "\E986";
+    margin-left: -1em;
+    color: #020000
+}
+
+.Icon--laptop-controls .path8:before {
+    content: "\E987";
+    margin-left: -1em;
+    color: #020000
+}
+
+.Icon--laptop-controls .path9:before {
+    content: "\E988";
+    margin-left: -1em;
+    color: #020000
+}
+
+.Icon--laptop-controls .path10:before {
+    content: "\E989";
+    margin-left: -1em;
+    color: #020000
+}
+
+.Icon--laptop-gps-tracking:before {
+    content: "\E98A"
+}
+
+.Icon--laptop-settings .path1:before {
+    content: "\E98B";
+    color: #020000
+}
+
+.Icon--laptop-settings .path2:before {
+    content: "\E98C";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--laptop-settings .path3:before {
+    content: "\E98D";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--laptop-trends:before {
+    content: "\E98E"
+}
+
+.Icon--laptop-wireless:before {
+    content: "\E98F"
+}
+
+.Icon--large-plan:before {
+    content: "\E990"
+}
+
+.Icon--law:before {
+    content: "\E991"
+}
+
+.Icon--left-arrow:before {
+    content: "\E992"
+}
+
+.Icon--left-caret:before {
+    content: "\E993"
+}
+
+.Icon--link:before {
+    content: "\E994"
+}
+
+.Icon--list:before {
+    content: "\E995"
+}
+
+.Icon--lmr:before {
+    content: "\E996"
+}
+
+.Icon--loader:before {
+    content: "\E997"
+}
+
+.Icon--location:before {
+    content: "\E998"
+}
+
+.Icon--lock-closed:before {
+    content: "\E999"
+}
+
+.Icon--lock-open:before {
+    content: "\E99A"
+}
+
+.Icon--manufacturing:before {
+    content: "\E99B"
+}
+
+.Icon--map-view:before {
+    content: "\E99C"
+}
+
+.Icon--masonry-view:before {
+    content: "\E99D"
+}
+
+.Icon--media-entertainment:before {
+    content: "\E99E"
+}
+
+.Icon--medium-business:before {
+    content: "\E99F"
+}
+
+.Icon--medium-plan:before {
+    content: "\E9A0"
+}
+
+.Icon--menu:before {
+    content: "\E9A1"
+}
+
+.Icon--microphone:before {
+    content: "\E9A2"
+}
+
+.Icon--minus-large:before {
+    content: "\E9A3"
+}
+
+.Icon--minus-small:before {
+    content: "\E9A4"
+}
+
+.Icon--missed-call:before {
+    content: "\E9A5"
+}
+
+.Icon--mobile-apps:before {
+    content: "\E9A6"
+}
+
+.Icon--mobile-command-center:before {
+    content: "\E9A7"
+}
+
+.Icon--mobile-hotspot:before {
+    content: "\E9A8"
+}
+
+.Icon--mobile-kiosk-info:before {
+    content: "\E9A9"
+}
+
+.Icon--mobile-kiosk-wireless:before {
+    content: "\E9AA"
+}
+
+.Icon--mobile-retail:before {
+    content: "\E9AB"
+}
+
+.Icon--mobile-search:before {
+    content: "\E9AC"
+}
+
+.Icon--mobile-workforce-management:before {
+    content: "\E9AD"
+}
+
+.Icon--modem-router:before {
+    content: "\E9AE"
+}
+
+.Icon--more-horizontal:before {
+    content: "\E9AF"
+}
+
+.Icon--move-to:before {
+    content: "\E9B0"
+}
+
+.Icon--multicast:before {
+    content: "\E9B1"
+}
+
+.Icon--multiple-devices:before {
+    content: "\E9B2"
+}
+
+.Icon--music-trumpet:before {
+    content: "\E9B3"
+}
+
+.Icon--music:before {
+    content: "\E9B4"
+}
+
+.Icon--my-account:before {
+    content: "\E9B5"
+}
+
+.Icon--nation-wide:before {
+    content: "\E9B6"
+}
+
+.Icon--network:before {
+    content: "\E9B7"
+}
+
+.Icon--news:before {
+    content: "\E9B8"
+}
+
+.Icon--next:before {
+    content: "\E9B9"
+}
+
+.Icon--night:before {
+    content: "\E9BA"
+}
+
+.Icon--no-fee:before {
+    content: "\E9BB"
+}
+
+.Icon--no-off .path1:before {
+    content: "\E9BC";
+    color: #b3b3b3
+}
+
+.Icon--no-off .path2:before {
+    content: "\E9BD";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--no-smoking:before {
+    content: "\E9BE"
+}
+
+.Icon--no:before {
+    content: "\E9BF"
+}
+
+.Icon--notification:before {
+    content: "\E9C0"
+}
+
+.Icon--notifications-off .path1:before {
+    content: "\E9C1";
+    color: #b3b3b3
+}
+
+.Icon--notifications-off .path2:before {
+    content: "\E9C2";
+    margin-left: -1em;
+    color: #b3b3b3
+}
+
+.Icon--notifications-off .path3:before {
+    content: "\E9C3";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--notify-me:before {
+    content: "\E9C4"
+}
+
+.Icon--office-phone-system:before {
+    content: "\E9C5"
+}
+
+.Icon--oil-industry:before {
+    content: "\E9C6"
+}
+
+.Icon--on-go-car:before {
+    content: "\E9C7"
+}
+
+.Icon--one-year:before {
+    content: "\E9C8"
+}
+
+.Icon--operational-transformation:before {
+    content: "\E9C9"
+}
+
+.Icon--orders:before {
+    content: "\E9CA"
+}
+
+.Icon--out-of-stock:before {
+    content: "\E9CB"
+}
+
+.Icon--outgoing-call:before {
+    content: "\E9CC"
+}
+
+.Icon--pack-backpack:before {
+    content: "\E9CD"
+}
+
+.Icon--pack-luggage:before {
+    content: "\E9CE"
+}
+
+.Icon--pack-purse:before {
+    content: "\E9CF"
+}
+
+.Icon--pause:before {
+    content: "\E9D0"
+}
+
+.Icon--pets-collar:before {
+    content: "\E9D1"
+}
+
+.Icon--pharmaceutical:before {
+    content: "\E9D2"
+}
+
+.Icon--phone-all-good:before {
+    content: "\E9D3"
+}
+
+.Icon--phone-alt:before {
+    content: "\E9D4"
+}
+
+.Icon--phone-favorite:before {
+    content: "\E9D5"
+}
+
+.Icon--phone-medical:before {
+    content: "\E9D6"
+}
+
+.Icon--phone:before {
+    content: "\E9D7"
+}
+
+.Icon--photo:before {
+    content: "\E9D8"
+}
+
+.Icon--play-alt:before {
+    content: "\E9D9"
+}
+
+.Icon--play-with:before {
+    content: "\E9DA"
+}
+
+.Icon--play:before {
+    content: "\E9DB"
+}
+
+.Icon--plus-large:before {
+    content: "\E9DC"
+}
+
+.Icon--plus-small:before {
+    content: "\E9DD"
+}
+
+.Icon--police-fleet:before {
+    content: "\E9DE"
+}
+
+.Icon--portrait:before {
+    content: "\E9DF"
+}
+
+.Icon--previous:before {
+    content: "\E9E0"
+}
+
+.Icon--print:before {
+    content: "\E9E1"
+}
+
+.Icon--professional-services-case:before {
+    content: "\E9E2"
+}
+
+.Icon--professional-services-chart:before {
+    content: "\E9E3"
+}
+
+.Icon--promo-badge .path1:before {
+    content: "\E9E4";
+    color: #000
+}
+
+.Icon--promo-badge .path2:before {
+    content: "\E9E5";
+    margin-left: -1em;
+    color: #fff
+}
+
+.Icon--public-safety:before {
+    content: "\E9E6"
+}
+
+.Icon--public-transportation:before {
+    content: "\E9E7"
+}
+
+.Icon--purchase-data:before {
+    content: "\E9E8"
+}
+
+.Icon--purchases:before {
+    content: "\E9E9"
+}
+
+.Icon--push-to-talk:before {
+    content: "\E9EA"
+}
+
+.Icon--question:before {
+    content: "\E9EB"
+}
+
+.Icon--recycle:before {
+    content: "\E9EC"
+}
+
+.Icon--remind-me:before {
+    content: "\E9ED"
+}
+
+.Icon--remove-item:before {
+    content: "\E9EE"
+}
+
+.Icon--reservation:before {
+    content: "\E9EF"
+}
+
+.Icon--returns:before {
+    content: "\E9F0"
+}
+
+.Icon--rewards:before {
+    content: "\E9F1"
+}
+
+.Icon--right-arrow:before {
+    content: "\E9F2"
+}
+
+.Icon--right-caret:before {
+    content: "\E9F3"
+}
+
+.Icon--risk-monitor:before {
+    content: "\E9F4"
+}
+
+.Icon--rss:before {
+    content: "\E9F5"
+}
+
+.Icon--save:before {
+    content: "\E9F6"
+}
+
+.Icon--scale-alt:before {
+    content: "\E9F7"
+}
+
+.Icon--scale:before {
+    content: "\E9F8"
+}
+
+.Icon--school-notebook:before {
+    content: "\E9F9"
+}
+
+.Icon--search:before {
+    content: "\E9FA"
+}
+
+.Icon--security-alert:before {
+    content: "\E9FB"
+}
+
+.Icon--security-check:before {
+    content: "\E9FC"
+}
+
+.Icon--security-keyhole:before {
+    content: "\E9FD"
+}
+
+.Icon--security-wireless:before {
+    content: "\E9FE"
+}
+
+.Icon--server-search:before {
+    content: "\E9FF"
+}
+
+.Icon--server-stack:before {
+    content: "\EA00"
+}
+
+.Icon--set-fallback-image:before {
+    content: "\EA01"
+}
+
+.Icon--set-gallery-image:before {
+    content: "\EA02"
+}
+
+.Icon--settings:before {
+    content: "\EA03"
+}
+
+.Icon--Share:before {
+    content: "\EA04"
+}
+
+.Icon--shipping:before {
+    content: "\EA05"
+}
+
+.Icon--shopping-bag:before {
+    content: "\EA06"
+}
+
+.Icon--shopping:before {
+    content: "\EA07"
+}
+
+.Icon--signal-broadcast:before {
+    content: "\EA08"
+}
+
+.Icon--sim-card:before {
+    content: "\EA09"
+}
+
+.Icon--small-business:before {
+    content: "\EA0A"
+}
+
+.Icon--small-plan:before {
+    content: "\EA0B"
+}
+
+.Icon--smart-communities:before {
+    content: "\EA0C"
+}
+
+.Icon--smart-lighting:before {
+    content: "\EA0D"
+}
+
+.Icon--smart-meter:before {
+    content: "\EA0E"
+}
+
+.Icon--social-facebook:before {
+    content: "\EA0F"
+}
+
+.Icon--social-instagram:before {
+    content: "\EA10"
+}
+
+.Icon--social-twitter:before {
+    content: "\EA11"
+}
+
+.Icon--social-youtube:before {
+    content: "\EA12"
+}
+
+.Icon--sound:before {
+    content: "\EA13"
+}
+
+.Icon--speed-monitoring:before {
+    content: "\EA14"
+}
+
+.Icon--speed:before {
+    content: "\EA15"
+}
+
+.Icon--sports-bike:before {
+    content: "\EA16"
+}
+
+.Icon--sports-skis:before {
+    content: "\EA17"
+}
+
+.Icon--sports-soccer:before {
+    content: "\EA18"
+}
+
+.Icon--sports-tennis:before {
+    content: "\EA19"
+}
+
+.Icon--start:before {
+    content: "\EA1A"
+}
+
+.Icon--stop-alt:before {
+    content: "\EA1B"
+}
+
+.Icon--stop:before {
+    content: "\EA1C"
+}
+
+.Icon--support-drawer:before {
+    content: "\EA1D"
+}
+
+.Icon--support:before {
+    content: "\EA1E"
+}
+
+.Icon--swipe-left:before {
+    content: "\EA1F"
+}
+
+.Icon--swipe-right:before {
+    content: "\EA20"
+}
+
+.Icon--swipe:before {
+    content: "\EA21"
+}
+
+.Icon--switch:before {
+    content: "\EA22"
+}
+
+.Icon--sync:before {
+    content: "\EA23"
+}
+
+.Icon--tabet-data:before {
+    content: "\EA24"
+}
+
+.Icon--tablet-wireless:before {
+    content: "\EA25"
+}
+
+.Icon--tablet:before {
+    content: "\EA26"
+}
+
+.Icon--tag:before {
+    content: "\EA27"
+}
+
+.Icon--target-goal:before {
+    content: "\EA28"
+}
+
+.Icon--taxes:before {
+    content: "\EA29"
+}
+
+.Icon--tech-laptop:before {
+    content: "\EA2A"
+}
+
+.Icon--tech-phone:before {
+    content: "\EA2B"
+}
+
+.Icon--technology:before {
+    content: "\EA2C"
+}
+
+.Icon--telematics-car:before {
+    content: "\EA2D"
+}
+
+.Icon--temperature:before {
+    content: "\EA2E"
+}
+
+.Icon--template:before {
+    content: "\EA2F"
+}
+
+.Icon--thermostat-tech:before {
+    content: "\EA30"
+}
+
+.Icon--thumbs-down:before {
+    content: "\EA31"
+}
+
+.Icon--thumbs-up:before {
+    content: "\EA32"
+}
+
+.Icon--ticket:before {
+    content: "\EA33"
+}
+
+.Icon--tools:before {
+    content: "\EA34"
+}
+
+.Icon--tooltip:before {
+    content: "\EA35"
+}
+
+.Icon--top-box:before {
+    content: "\EA36"
+}
+
+.Icon--traffic-light:before {
+    content: "\EA37"
+}
+
+.Icon--transportation:before {
+    content: "\EA38"
+}
+
+.Icon--trash:before {
+    content: "\EA39"
+}
+
+.Icon--travel-keys:before {
+    content: "\EA3A"
+}
+
+.Icon--travel-pass:before {
+    content: "\EA3B"
+}
+
+.Icon--trip-planner:before {
+    content: "\EA3C"
+}
+
+.Icon--turnon-off:before {
+    content: "\EA3D"
+}
+
+.Icon--tv:before {
+    content: "\EA3E"
+}
+
+.Icon--unified-comms:before {
+    content: "\EA3F"
+}
+
+.Icon--unlimited-plan:before {
+    content: "\EA40"
+}
+
+.Icon--up-arrow:before {
+    content: "\EA41"
+}
+
+.Icon--uplink:before {
+    content: "\EA42"
+}
+
+.Icon--upload:before {
+    content: "\EA43"
+}
+
+.Icon--utility-grid-management:before {
+    content: "\EA44"
+}
+
+.Icon--video-on-tablet:before {
+    content: "\EA45"
+}
+
+.Icon--voice-hd:before {
+    content: "\EA46"
+}
+
+.Icon--voice-mail:before {
+    content: "\EA47"
+}
+
+.Icon--water-resistant:before {
+    content: "\EA48"
+}
+
+.Icon--water-utility:before {
+    content: "\EA49"
+}
+
+.Icon--wearable:before {
+    content: "\EA4A"
+}
+
+.Icon--weather .path1:before {
+    content: "\EA4B";
+    color: #000
+}
+
+.Icon--weather .path2:before {
+    content: "\EA4C";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--weather .path3:before {
+    content: "\EA4D";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--weather .path4:before {
+    content: "\EA4E";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--weather .path5:before {
+    content: "\EA4F";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--weather .path6:before {
+    content: "\EA50";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--weather .path7:before {
+    content: "\EA51";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--weather .path8:before {
+    content: "\EA52";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--weather .path9:before {
+    content: "\EA53";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--weather .path10:before {
+    content: "\EA54";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--weather .path11:before {
+    content: "\EA55";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--weather .path12:before {
+    content: "\EA56";
+    margin-left: -1em;
+    color: #000
+}
+
+.Icon--weather .path13:before {
+    content: "\EA57";
+    margin-left: -1em;
+    color: #1c1b1a
+}
+
+.Icon--wifi:before {
+    content: "\EA58"
+}
+
+.Icon--wireless-vending:before {
+    content: "\EA59"
+}
+
+.Icon--wireless-video-surveillance:before {
+    content: "\EA5A"
+}
+
+.Icon--zoom-in:before {
+    content: "\EA5B"
+}
+
+.Icon--zoom-out:before {
+    content: "\EA5C"
+}

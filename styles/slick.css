@@ -1,0 +1,224 @@
+.slick-slider {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent
+}
+
+.slick-list,.slick-slider {
+    position: relative;
+    display: block
+}
+
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.slick-list:focus {
+    outline: none
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand
+}
+
+.slick-slider .slick-list,.slick-slider .slick-track {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.slick-track:after,.slick-track:before {
+    content: "";
+    display: table
+}
+
+.slick-track:after {
+    clear: both
+}
+
+.slick-loading .slick-track {
+    visibility: hidden
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none
+}
+
+[dir=rtl] .slick-slide {
+    float: right
+}
+
+.slick-slide img {
+    display: block
+}
+
+.slick-slide.slick-loading img {
+    display: none
+}
+
+.slick-slide.dragging img {
+    pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+    display: block
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid rgba(0,0,0,0)
+}
+
+.slick-arrow.slick-hidden {
+    display: none
+}
+
+/* Slick Overrides */
+
+.slick-arrow {
+    position: absolute;
+    font-size: 44px;
+    z-index: 100;
+    top: 0;
+    -webkit-transform: translateX(-16px);
+    -moz-transform: translateX(-16px);
+    -ms-transform: translateX(-16px);
+    -o-transform: translateX(-16px);
+    transform: translateX(-16px)
+}
+
+@media screen and (min-width: 991px) {
+    .slick-arrow {
+        -webkit-transform:translateX(-20px);
+        -moz-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        -o-transform: translateX(-20px);
+        transform: translateX(-20px)
+    }
+}
+
+.slick-arrow.slick-prev {
+    right: 56px
+}
+
+.slick-arrow.slick-next {
+    right: 0
+}
+
+.slick-arrow.slick-disabled {
+    display: none!important
+}
+
+.u-colorBackgroundPrimary .slick-arrow {
+    color: #fff
+}
+
+.u-colorBackgroundSecondary .slick-arrow {
+    color: #000
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    list-style: none;
+    padding: 0
+}
+
+.slick-dots li {
+    margin: 0 2px;
+    line-height: 4px
+}
+
+.slick-dots li button {
+    height: 2px;
+    width: 32px;
+    border: 0;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    background-color: #747676;
+    color: rgba(0,0,0,0);
+    overflow: hidden;
+    vertical-align: bottom
+}
+
+@media screen and (min-width: 991px) {
+    .slick-dots li button {
+        width:42px
+    }
+}
+
+.slick-dots li.slick-active button {
+    background-color: #000;
+    height: 4px
+}
+
+.u-colorBackgroundPrimary .slick-dots li button {
+    background-color: hsla(0,0%,100%,.2)
+}
+
+.u-colorBackgroundPrimary .slick-dots li.slick-active button {
+    background-color: #fff!important
+}
+
+.u-colorBackgroundSecondary .slick-dots li button {
+    background-color: #747676
+}
+
+.u-colorBackgroundSecondary .slick-dots li.slick-active button {
+    background-color: #000!important
+}
+
+@media screen and (min-width: 768px) {
+    .Col--md9 .slick-dots {
+        margin-left:-33.333333%
+    }
+}

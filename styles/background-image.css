@@ -1,0 +1,237 @@
+.background-image {
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    position: relative
+}
+
+.background-image.background-cover {
+    background-size: cover
+}
+
+.background-image.background-contain {
+    background-size: contain
+}
+
+.background-image.background-positionX--0 {
+    background-position-x: 0
+}
+
+.background-image.background-positionX--25 {
+    background-position-x: 25%
+}
+
+.background-image.background-positionX--50 {
+    background-position-x: 50%
+}
+
+.background-image.background-positionX--75 {
+    background-position-x: 75%
+}
+
+.background-image.background-positionX--100 {
+    background-position-x: 100%
+}
+
+@media screen and (min-width: 320px) {
+    .background-image.background-cover--xs {
+        background-size:cover
+    }
+
+    .background-image.background-contain--xs {
+        background-size: contain
+    }
+
+    .background-image.background-positionX--xs0 {
+        background-position-x: 0
+    }
+
+    .background-image.background-positionX--xs25 {
+        background-position-x: 25%
+    }
+
+    .background-image.background-positionX--xs50 {
+        background-position-x: 50%
+    }
+
+    .background-image.background-positionX--xs75 {
+        background-position-x: 75%
+    }
+
+    .background-image.background-positionX--xs100 {
+        background-position-x: 100%
+    }
+}
+
+@media screen and (min-width: 544px) {
+    .background-image.background-cover--sm {
+        background-size:cover
+    }
+
+    .background-image.background-contain--sm {
+        background-size: contain
+    }
+
+    .background-image.background-positionX--sm0 {
+        background-position-x: 0
+    }
+
+    .background-image.background-positionX--sm25 {
+        background-position-x: 25%
+    }
+
+    .background-image.background-positionX--sm50 {
+        background-position-x: 50%
+    }
+
+    .background-image.background-positionX--sm75 {
+        background-position-x: 75%
+    }
+
+    .background-image.background-positionX--sm100 {
+        background-position-x: 100%
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .background-image.background-cover--md {
+        background-size:cover
+    }
+
+    .background-image.background-contain--md {
+        background-size: contain
+    }
+
+    .background-image.background-positionX--md0 {
+        background-position-x: 0
+    }
+
+    .background-image.background-positionX--md25 {
+        background-position-x: 25%
+    }
+
+    .background-image.background-positionX--md50 {
+        background-position-x: 50%
+    }
+
+    .background-image.background-positionX--md75 {
+        background-position-x: 75%
+    }
+
+    .background-image.background-positionX--md100 {
+        background-position-x: 100%
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .background-image.background-cover--lg {
+        background-size:cover
+    }
+
+    .background-image.background-contain--lg {
+        background-size: contain
+    }
+
+    .background-image.background-positionX--lg0 {
+        background-position-x: 0
+    }
+
+    .background-image.background-positionX--lg25 {
+        background-position-x: 25%
+    }
+
+    .background-image.background-positionX--lg50 {
+        background-position-x: 50%
+    }
+
+    .background-image.background-positionX--lg75 {
+        background-position-x: 75%
+    }
+
+    .background-image.background-positionX--lg100 {
+        background-position-x: 100%
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .background-image.background-cover--xl {
+        background-size:cover
+    }
+
+    .background-image.background-contain--xl {
+        background-size: contain
+    }
+
+    .background-image.background-positionX--xl0 {
+        background-position-x: 0
+    }
+
+    .background-image.background-positionX--xl25 {
+        background-position-x: 25%
+    }
+
+    .background-image.background-positionX--xl50 {
+        background-position-x: 50%
+    }
+
+    .background-image.background-positionX--xl75 {
+        background-position-x: 75%
+    }
+
+    .background-image.background-positionX--xl100 {
+        background-position-x: 100%
+    }
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 0;
+    width: auto;
+    height: -moz-calc(100% + 2px);
+    height: calc(100% + 2px)
+}
+
+.background-video.background-video-span-width {
+    width: 100%;
+    height: auto
+}
+
+.background-video.background-video-span-height {
+    width: auto;
+    height: -moz-calc(100% + 2px);
+    height: calc(100% + 2px)
+}
+
+[data-loading=eager].background-image {
+    --_bgMobile: var(--bgMobile,unset);
+    --_bgTablet: var(--bgTablet,var(--bgDesktop));
+    --_bgDesktop: var(--bgDesktop,unset);
+    background-image: var(--_bgMobile)
+}
+
+@media (-o-min-device-pixel-ratio: 2/1),(-webkit-min-device-pixel-ratio:2),(min--moz-device-pixel-ratio:2),(min-resolution:192dpi),screen and (-webkit-min-device-pixel-ratio:2) {
+    [data-loading=eager].background-image {
+        --_bgMobile:var(--bgMobile2x,var(--bgMobile));
+        --_bgTablet: var(--bgTablet2x,var(--bgTablet,var(--bgDesktop2x,var(--bgDesktop))));
+        --_bgDesktop: var(--bgDesktop2x,var(--bgDesktop))
+    }
+}
+
+@media screen and (min-width: 768px) {
+    [data-loading=eager].background-image {
+        background-image:var(--_bgTablet)
+    }
+}
+
+@media screen and (min-width: 992px) {
+    [data-loading=eager].background-image {
+        background-image:var(--_bgDesktop)
+    }
+}

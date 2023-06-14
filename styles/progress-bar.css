@@ -1,0 +1,26 @@
+.progress-bar-dots .slick-dots li {
+    margin: 0
+}
+
+.progress-bar-dots .slick-dots li button {
+    border-radius: 0;
+    height: 4px;
+    background-color: #d8dada
+}
+
+.progress-bar-dots .slick-dots li.slick-active:first-child,.progress-bar-dots .slick-dots li:first-child button {
+    border-radius: 2px 0 0 2px
+}
+
+.progress-bar-dots .slick-dots li.slick-active:last-child,.progress-bar-dots .slick-dots li:last-child button {
+    border-radius: 0 2px 2px 0
+}
+
+.progress-bar-dots .slick-dots li.slick-active {
+    background-color: #d8dada
+}
+
+.progress-bar-dots .slick-dots li.slick-active button {
+    background-color: #6d7171!important;
+    border-radius: 2px
+}

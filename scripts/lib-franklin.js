@@ -257,16 +257,20 @@ export async function fetchPlaceholders(prefix = 'default') {
  * Decorates a block.
  * @param {Element} block The block element
  */
-export function decorateBlock(block) {
+export function decorateBlock(block, blockId, blockClasses, wrapperClasses, sectionClasses) {
   const shortBlockName = block.classList[0];
   if (shortBlockName) {
     block.classList.add('block');
+    if(blockId && blockId != "") block.id = blockId;
+    if(blockClasses && blockClasses.length) block.classList.add(...blockClasses);
     block.dataset.blockName = shortBlockName;
     block.dataset.blockStatus = 'initialized';
     const blockWrapper = block.parentElement;
     blockWrapper.classList.add(`${shortBlockName}-wrapper`);
+    if(wrapperClasses && wrapperClasses.length) blockWrapper.classList.add(...wrapperClasses);
     const section = block.closest('.section');
     if (section) section.classList.add(`${shortBlockName}-container`);
+    if(sectionClasses && sectionClasses.length) section.classList.add(...sectionClasses);
   }
 }
 
@@ -381,7 +385,7 @@ export function updateSectionsStatus(main) {
 export function decorateBlocks(main) {
   main
     .querySelectorAll('div.section > div > div')
-    .forEach(decorateBlock);
+    .forEach((block) => decorateBlock(block));
 }
 
 /**
@@ -607,7 +611,7 @@ export async function waitForLCP(lcpBlocks) {
 export function loadHeader(header) {
   const headerBlock = buildBlock('header', '');
   header.append(headerBlock);
-  decorateBlock(headerBlock);
+  decorateBlock(headerBlock, "vz-gh20", null, ['aem-GridColumn', 'aem-GridColumn--default--12']);
   return loadBlock(headerBlock);
 }
 

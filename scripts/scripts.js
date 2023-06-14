@@ -11,6 +11,7 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
+  loadScript
 } from './lib-franklin.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
@@ -81,6 +82,7 @@ export function decorateBody() {
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
+  decorateBody();
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);
@@ -105,6 +107,7 @@ async function loadLazy(doc) {
   loadFooter(doc.querySelector('footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
+  // loadScript(`${window.hlx.codeBasePath}/scripts/gnav.js`);
   sampleRUM('lazy');
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));
@@ -121,7 +124,6 @@ function loadDelayed() {
 }
 
 async function loadPage() {
-  decorateBody();
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
