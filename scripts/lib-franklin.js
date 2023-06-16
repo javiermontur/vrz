@@ -564,18 +564,18 @@ export function decorateButtons(element) {
       const twoup = a.parentElement.parentElement;
       if (!a.querySelector('img')) {
         if (up.childNodes.length === 1 && (up.tagName === 'P' || up.tagName === 'DIV')) {
-          a.className = 'button primary'; // default
-          up.classList.add('button-container');
+          a.className = 'Button Button--primary Button--transparent u-fontDisplay u-textBreakNoWrap u-marginBottom--xs0'; // default
+          up.classList.add('btn-wrap');
         }
         if (up.childNodes.length === 1 && up.tagName === 'STRONG'
           && twoup.childNodes.length === 1 && twoup.tagName === 'P') {
-          a.className = 'button primary';
-          twoup.classList.add('button-container');
+          a.className = 'Button Button--primary Button--transparent u-fontDisplay u-textBreakNoWrap u-marginBottom--xs0';
+          twoup.classList.add('btn-wrap');
         }
         if (up.childNodes.length === 1 && up.tagName === 'EM'
           && twoup.childNodes.length === 1 && twoup.tagName === 'P') {
-          a.className = 'button secondary';
-          twoup.classList.add('button-container');
+          a.className = 'Button Button--secondary Button--transparent u-fontDisplay u-textBreakNoWrap u-marginBottom--xs0';
+          twoup.classList.add('btn-wrap');
         }
       }
     }

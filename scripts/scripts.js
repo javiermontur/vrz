@@ -44,6 +44,15 @@ function buildAutoBlocks(main) {
   }
 }
 
+function reDecorateMain(main) {
+  main.classList.add('main', 'responsivegrid', 'aem-GridColumn', 'aem-GridColumn--default--12');
+  // const container = document.createElement('div');
+  // container.classList.add('main-content', 'aem-Grid', 'aem-Grid--12', 'aem-Grid--default--12');
+  // container.innerHTML = main.innerHTML;
+  // main.innerHTML = '';
+  // main.prepend(container);
+}
+
 /**
  * Decorates the main element.
  * @param {Element} main The main element
@@ -53,7 +62,8 @@ export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
   decorateIcons(main);
-  buildAutoBlocks(main);
+  // buildAutoBlocks(main);
+  reDecorateMain(main);
   decorateSections(main);
   decorateBlocks(main);
 }
@@ -107,7 +117,6 @@ async function loadLazy(doc) {
   loadFooter(doc.querySelector('footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
-  // loadScript(`${window.hlx.codeBasePath}/scripts/gnav.js`);
   sampleRUM('lazy');
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));
