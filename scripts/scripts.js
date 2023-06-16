@@ -14,7 +14,7 @@ import {
   loadScript
 } from './lib-franklin.js';
 
-const LCP_BLOCKS = ['tabnav','promohero']; // add your LCP blocks to the list
+const LCP_BLOCKS = ['header', 'tabnav', 'promohero']; // add your LCP blocks to the list
 
 /**
  * Builds hero block and prepends to main in a new section.
@@ -44,14 +44,14 @@ function buildAutoBlocks(main) {
   }
 }
 
-// function reDecorateMain(main) {
-//   main.classList.add('main', 'responsivegrid', 'aem-GridColumn', 'aem-GridColumn--default--12');
-//   // const container = document.createElement('div');
-//   // container.classList.add('main-content', 'aem-Grid', 'aem-Grid--12', 'aem-Grid--default--12');
-//   // container.innerHTML = main.innerHTML;
-//   // main.innerHTML = '';
-//   // main.prepend(container);
-// }
+function reDecorateMain(main) {
+  main.classList.add('main', 'responsivegrid', 'aem-GridColumn', 'aem-GridColumn--default--12');
+  // const container = document.createElement('div');
+  // container.classList.add('main-content', 'aem-Grid', 'aem-Grid--12', 'aem-Grid--default--12');
+  // container.innerHTML = main.innerHTML;
+  // main.innerHTML = '';
+  // main.prepend(container);
+}
 
 /**
  * Decorates the main element.
@@ -63,7 +63,7 @@ export function decorateMain(main) {
   decorateButtons(main);
   decorateIcons(main);
   // buildAutoBlocks(main);
-  // reDecorateMain(main);
+  reDecorateMain(main);
   decorateSections(main);
   decorateBlocks(main);
 }
