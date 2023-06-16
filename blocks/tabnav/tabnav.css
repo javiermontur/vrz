@@ -1,0 +1,443 @@
+.tab-nav .Tabs .Tabs-list {
+    border: 0;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch
+}
+
+.tab-nav .Tabs .Tabs-list .Tab {
+    min-width: auto;
+    margin-right: 32px;
+    position: relative
+}
+
+@media screen and (min-width: 991px) {
+    .tab-nav .Tabs .Tabs-list .Tab {
+        margin-right:40px
+    }
+}
+
+.tab-nav .Tabs .Tabs-list .Tab.is-active>a {
+    font-weight: 700;
+    border-bottom-color: #d52b1e!important
+}
+
+.tab-nav .Tabs .Tabs-list .Tab:hover>a {
+    border-bottom-color: #747676
+}
+
+.tab-nav .Tabs .Tabs-list .Tab a {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: BrandFont-Display,Helvetica,Arial,sans-serif;
+    padding: 17px 0 15px;
+    height: 100%;
+    border-top-color: rgba(0,0,0,0);
+    border-bottom-color: rgba(0,0,0,0)
+}
+
+.tab-nav .Tabs .Tabs-list .Tab a span {
+    font-size: 12px
+}
+
+@media screen and (min-width: 991px) {
+    .tab-nav .Tabs .Tabs-list .Tab a span {
+        font-size:14px
+    }
+}
+
+.tab-nav .Tabs .Tabs-list .Tab .Tabs-list {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    -webkit-box-shadow: 0 0 0 1px #d8dada;
+    box-shadow: 0 0 0 1px #d8dada;
+    padding: 14px;
+    background-color: #fff;
+    margin: 0 -14px;
+    z-index: 1
+}
+
+.tab-nav .Tabs .Tabs-list .Tab .Tabs-list .Tab {
+    margin-right: 0
+}
+
+.tab-nav .Tabs .Tabs-list .Tab .Tabs-list .Tab a {
+    white-space: nowrap
+}
+
+.tab-nav .Tabs .Tabs-list .Tab.opened .Tabs-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.tab-nav .Tabs .Tabs-list .Tab.opened a {
+    z-index: 2
+}
+
+.tab-nav .Form-group {
+    margin: 0
+}
+
+.tab-nav .Form-group .Form-input {
+    margin: 0;
+    width: 100%;
+    font-weight: 700;
+    border: 0;
+    padding: 0;
+    background-position: 100%
+}
+
+.tab-nav.tab-reduced .Tabs .Tabs-list .Tab a {
+    font-size: 14px;
+    padding: 17px 0 5px;
+    font-weight: 400
+}
+
+@media screen and (min-width: 991px) {
+    .tab-nav.tab-reduced .Tabs .Tabs-list .Tab a {
+        font-size:14px
+    }
+}
+
+.tab-nav.tab-reduced .Tabs .Tabs-list .Tab a span {
+    font-size: 12px
+}
+
+@media screen and (min-width: 991px) {
+    .tab-nav.tab-reduced .Tabs .Tabs-list .Tab a span {
+        font-size:12px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tab-nav.tab-nav-right {
+        display:-webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -moz-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+    }
+
+    .tab-nav.tab-nav-right .Tabs {
+        width: 70%;
+        max-width: 615px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tab-nav.tab-colors {
+        display:-webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -moz-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+    }
+
+    .tab-nav.tab-colors .Tabs,.tab-nav.tab-colors .Tabs .Tabs-list {
+        width: 100%
+    }
+
+    .tab-nav.tab-colors .Tabs .Tabs-list .Tab {
+        width: 25%
+    }
+
+    .tab-nav.tab-colors .Tabs .Tabs-list .Tab>a {
+        width: 100%;
+        border-bottom-width: 1px;
+        font-weight: 700;
+        color: #747676
+    }
+
+    .tab-nav.tab-colors .Tabs .Tabs-list .Tab.is-active>a {
+        border-bottom-width: 4px;
+        color: #000
+    }
+}
+
+.tab-nav.tab-colors .Form-group {
+    padding: 20px 12px 4px;
+    border: 1px solid #000
+}
+
+.tab-nav.tab-colors .Form-group .Form-input {
+    font-size: 16px
+}
+
+.tab-nav.tab-inverse {
+    background-color: #000
+}
+
+.tab-nav.tab-inverse .Tabs .Tabs-list .Tab a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 12px 0 9px
+}
+
+.tab-nav.tab-inverse .Tabs .Tabs-list .Tab.is-active>a {
+    font-weight: 700
+}
+
+.tab-nav.tab-inverse .Tabs .Tabs-list .Tab .Tabs-list {
+    background-color: #000
+}
+
+.tab-nav.tab-inverse .Form-group:after {
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    position: absolute;
+    top: 35%;
+    right: 18px;
+    content: "";
+    pointer-events: none;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.tab-nav.tab-inverse .Form-group .Form-input {
+    font-size: 12px!important;
+    color: #fff!important;
+    font-weight: 400
+}
+
+.tab-nav.tab-inverse :focus.focus-visible,.tab-nav.tab-inverse :focus[data-focus-visible-added] {
+    outline-color: #fff
+}
+
+@media screen and (min-width: 768px) {
+    .tab-nav.tab-nav-center .Tabs.u-showForMediumUp {
+        display:-webkit-box!important;
+        display: -webkit-flex!important;
+        display: -moz-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+}
+
+.tab-nav.tab-nav-center .Tabs .Tabs-list .Tab {
+    margin-right: 28px
+}
+
+.tab-nav.tab-nav-center .Tabs .Tabs-list .Tab:last-of-type {
+    margin-right: 0
+}
+
+[data-cmp=vzrf-tabs-panel] .tab-panels .Tabs {
+    overflow-x: auto;
+    padding-bottom: 10px
+}
+
+[data-cmp=vzrf-tabs-panel] .tab-panels .Tabs .Tabs-list {
+    border: none;
+    display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 3px
+}
+
+[data-cmp=vzrf-tabs-panel] .tab-panels .Tabs .Tabs-list .Tab {
+    min-width: auto;
+    display: inline
+}
+
+[data-cmp=vzrf-tabs-panel] .tab-panels .Tabs .Tabs-list .Tab button {
+    font-weight: 700;
+    color: #6f7171;
+    border-width: 4px;
+    font-size: 16px
+}
+
+[data-cmp=vzrf-tabs-panel] .tab-panels .Tabs .Tabs-list .Tab:last-child {
+    margin-right: 0!important
+}
+
+[data-cmp=vzrf-tabs-panel] .tab-panels .Tabs .Tabs-list .Tab.is-active button {
+    color: #000;
+    font-weight: 700;
+    border: none;
+    position: relative
+}
+
+[data-cmp=vzrf-tabs-panel] .tab-panels .Tabs .Tabs-list .Tab.is-active button:after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #e00;
+    bottom: -7px
+}
+
+.Tabs-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: .0625rem solid rgba(0,0,0,0);
+    border-bottom: .0625rem solid #d8dada
+}
+
+.Tab {
+    margin-bottom: 0;
+    margin-right: .875rem;
+    min-width: 5rem
+}
+
+.Tab,.Tab a,.Tab button {
+    position: relative;
+    display: inline-block
+}
+
+.Tab a,.Tab button {
+    border: 0;
+    padding: .1875rem 0;
+    margin: 0;
+    color: #000;
+    font-weight: 700;
+    font-size: .875rem;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    line-height: 1.2;
+    border-top: .1875rem solid rgba(0,0,0,0);
+    border-bottom: .1875rem solid rgba(0,0,0,0);
+    font-family: inherit;
+    text-align: left
+}
+
+.Tab a:focus,.Tab button:focus {
+    outline: .0625rem solid #d8dada
+}
+
+.Tab a:hover,.Tab button:hover {
+    color: #000;
+    background-color: rgba(0,0,0,0);
+    border-top-color: rgba(0,0,0,0);
+    border-bottom-color: #747676
+}
+
+.Tab.is-active a,.Tab.is-active button {
+    background-color: rgba(0,0,0,0);
+    color: #000;
+    border-top-color: rgba(0,0,0,0);
+    border-bottom-color: #d52b1e
+}
+
+.Tab.is-active a:hover,.Tab.is-active button:hover {
+    background-color: rgba(0,0,0,0);
+    color: #000;
+    border-top-color: rgba(0,0,0,0);
+    border-bottom-color: #d52b1e
+}
+
+.Tabs.Tabs--borderHide .Tabs-list,.Tabs.Tabs--borderTop .Tabs-list {
+    border-bottom-color: rgba(0,0,0,0)
+}
+
+.Tabs.Tabs--borderTop .Tabs-list {
+    border-top-color: #d8dada
+}
+
+.Tabs.Tabs--accentTop .Tab.is-active:hover a,.Tabs.Tabs--accentTop .Tab.is-active:hover button,.Tabs.Tabs--accentTop .Tab.is-active a,.Tabs.Tabs--accentTop .Tab.is-active button,.Tabs.Tabs--accentTop .Tab:hover a,.Tabs.Tabs--accentTop .Tab:hover button {
+    background-color: rgba(0,0,0,0);
+    color: #000;
+    border-bottom-color: rgba(0,0,0,0);
+    border-top-color: #d52b1e
+}
+
+.Tabs.Tabs--accentTop .Tab:hover a,.Tabs.Tabs--accentTop .Tab:hover button {
+    border-bottom-color: rgba(0,0,0,0);
+    border-top-color: #747676
+}
+
+.Tabs.Tabs--accentFill .Tab a,.Tabs.Tabs--accentFill .Tab button {
+    padding-right: 0;
+    margin-right: .875rem;
+    width: 100%
+}
+
+.Tabs.Tabs--centered .Tabs-list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.Tabs.Tabs--centered .Tab,.Tabs.Tabs--centered .Tab a,.Tabs.Tabs--centered .Tab button {
+    text-align: center
+}
+
+
+select.Form-input:not([multiple]) {
+    background-color: rgba(0,0,0,0);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 8'%3E%3Cpath d='M5.5 5.5l-.354.354.354.353.354-.353L5.5 5.5zM-.354.354l5.5 5.5.708-.708-5.5-5.5-.708.708zm6.208 5.5l5.5-5.5-.708-.708-5.5 5.5.708.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right .875rem center;
+    background-size: 1.125rem;
+    padding: 0 3rem 0 1.5ch;
+    line-height: 1rem;
+    cursor: pointer
+}
+
+select.Form-input:not([multiple]).is-success {
+    border-color: #00ac3e;
+    border-bottom-width: .25rem
+}
+
+select.Form-input:not([multiple]).is-info {
+    border-color: #0088ce;
+    border-bottom-width: .25rem
+}
+
+select.Form-input:not([multiple]).is-warning {
+    border-color: #ffbc3d;
+    border-bottom-width: .25rem
+}
+
+select.Form-input:not([multiple]).is-error {
+    border-color: #ed7000;
+    border-bottom-width: .25rem
+}

@@ -1,0 +1,535 @@
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    height: 560px
+}
+
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    min-width: 260px;
+    min-height: 0
+}
+
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col.content-wrap {
+    z-index: 2;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto
+}
+
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col .btn-wrap {
+    padding-bottom: 16px
+}
+
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col .btn-wrap a {
+    display: block
+}
+
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col .btn-wrap a:only-of-type {
+    display: inline-block
+}
+
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col .btn-wrap a:not(:first-of-type) {
+    margin-top: 16px
+}
+
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col picture img {
+    max-height: 100%
+}
+
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col picture.maxWidthNone-m img {
+    max-width: none
+}
+
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .legalFooter {
+    font-size: 11px;
+    margin-top: -12px!important
+}
+
+@media screen and (min-width: 768px) {
+    [data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid {
+        -webkit-box-orient:horizontal!important;
+        -webkit-box-direction: normal!important;
+        -webkit-flex-flow: row!important;
+        -moz-box-orient: horizontal!important;
+        -moz-box-direction: normal!important;
+        -ms-flex-flow: row!important;
+        flex-flow: row!important;
+        display: -webkit-box!important;
+        display: -webkit-flex!important;
+        display: -moz-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+        height: 477px
+    }
+
+    [data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col {
+        min-width: 320px
+    }
+
+    [data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col picture.maxWidthNone-d img {
+        max-width: none
+    }
+
+    [data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col picture:not(.maxWidthNone-d) img {
+        max-width: 100%!important
+    }
+
+    [data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col picture.imgFullHeight-d img {
+        height: 482px!important;
+        max-height: none!important
+    }
+
+    [data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col .btn-wrap a {
+        display: inline-block;
+        margin-top: 0!important
+    }
+
+    [data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .legalFooter {
+        margin-top: -20px!important
+    }
+}
+
+@media screen and (min-width: 768px) {
+    [data-cmp=vzrf-promo-hero][data-cmp-img-just=left] .cmp-wrapper .Grid {
+        -webkit-box-orient:horizontal!important;
+        -webkit-box-direction: reverse!important;
+        -webkit-flex-flow: row-reverse!important;
+        -moz-box-orient: horizontal!important;
+        -moz-box-direction: reverse!important;
+        -ms-flex-flow: row-reverse!important;
+        flex-flow: row-reverse!important
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-img-just=left] .cmp-wrapper .Grid .Col {
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%
+    }
+}
+
+@media screen and (min-width: 768px) {
+    [data-cmp=vzrf-promo-hero][data-cmp-img-just=right] .cmp-wrapper .Grid .Col:not(.content-wrap) {
+        -webkit-flex-basis:100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: none
+    }
+}
+
+@media screen and (min-width: 768px) {
+    [data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid {
+        -webkit-box-pack:center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        max-width: none!important
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col .btn-wrap,[data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col .headlineWrap,[data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col h1,[data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col h2,[data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col p {
+        max-width: 750px!important;
+        text-align: center!important
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col:not(.content-wrap) {
+        display: none!important
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .legalFooter {
+        text-align: center!important
+    }
+}
+
+@media screen and (max-width: 767px) {
+    [data-cmp=vzrf-promo-hero][data-cmp-text-m=topCenter] .Col {
+        display:-webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-text-m=topCenter] .Col .btn-wrap,[data-cmp=vzrf-promo-hero][data-cmp-text-m=topCenter] .Col .headlineWrap,[data-cmp=vzrf-promo-hero][data-cmp-text-m=topCenter] .Col h1,[data-cmp=vzrf-promo-hero][data-cmp-text-m=topCenter] .Col h2,[data-cmp=vzrf-promo-hero][data-cmp-text-m=topCenter] .Col p {
+        text-align: center!important
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-text-m=topCenter] .legalFooter {
+        text-align: center!important
+    }
+}
+
+@media screen and (max-width: 767px) {
+    [data-cmp=vzrf-promo-hero][data-cmp-text-m=centerCenter] .Grid {
+        -webkit-box-pack:center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-text-m=centerCenter] .Grid .Col {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-text-m=centerCenter] .Grid .Col .btn-wrap,[data-cmp=vzrf-promo-hero][data-cmp-text-m=centerCenter] .Grid .Col .headlineWrap,[data-cmp=vzrf-promo-hero][data-cmp-text-m=centerCenter] .Grid .Col h1,[data-cmp=vzrf-promo-hero][data-cmp-text-m=centerCenter] .Grid .Col h2,[data-cmp=vzrf-promo-hero][data-cmp-text-m=centerCenter] .Grid .Col p {
+        text-align: center!important
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-text-m=centerCenter] .Grid .Col:not(.content-wrap) {
+        display: none!important
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-text-m=centerCenter] .Grid .legalFooter {
+        text-align: center!important
+    }
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h1,[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h2 {
+    font-size: 24px
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col .headlineWrap,[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h1,[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h2,[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col p {
+    max-width: 260px
+}
+
+@media screen and (min-width: 768px) {
+    [data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h1,[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h2 {
+        font-size:32px
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col .headlineWrap,[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h1,[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h2,[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col p {
+        max-width: 320px
+    }
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h1,[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h2 {
+    font-size: 32px
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col .headlineWrap,[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h1,[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h2,[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col p {
+    max-width: 300px
+}
+
+@media screen and (min-width: 768px) {
+    [data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col {
+        display:-webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col .headlineWrap,[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h1,[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h2 {
+        max-width: none
+    }
+
+    [data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col p {
+        max-width: 320px
+    }
+}
+
+@media screen and (min-width: 991px) {
+    [data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h1,[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h2 {
+        font-size:64px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    [data-cmp=vzrf-promo-hero][data-cmp-img-align-dt=center] .cmp-wrapper .Grid .Col picture {
+        height:100%;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box!important;
+        display: -webkit-flex!important;
+        display: -moz-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important
+    }
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-img-align-m=center] .cmp-wrapper .Grid .Col picture {
+    height: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -moz-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important
+}
+
+@media screen and (min-width: 768px) {
+    [data-cmp=vzrf-promo-hero][data-cmp-img-align-dt=bottom] .cmp-wrapper .Grid .Col picture img {
+        bottom:-21px;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+}
+
+@media screen and (max-width: 767px) {
+    [data-cmp=vzrf-promo-hero][data-cmp-img-align-m=bottom] .cmp-wrapper .Grid .Col picture img {
+        bottom:-16px;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=white] .cmp-wrapper .Grid {
+    background-color: #fff
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid {
+    background-color: #000
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid a,[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid h1,[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid h2,[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid p {
+    color: #fff!important
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid a {
+    border-color: #fff!important
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=light-gray] .cmp-wrapper .Grid {
+    background-color: #f6f6f6
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=dark-gray] .cmp-wrapper .Grid {
+    background-color: #d8d8d8
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=red] .cmp-wrapper .Grid {
+    background-color: #ed0900
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=red] .cmp-wrapper .Grid a,[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=red] .cmp-wrapper .Grid h1,[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=red] .cmp-wrapper .Grid h2,[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=red] .cmp-wrapper .Grid p {
+    color: #fff!important
+}
+
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=red] .cmp-wrapper .Grid a {
+    border-color: #fff!important
+}
+
+/* inline overrides */
+
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid {
+flex-flow: column;
+}
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col {
+flex-flow: column;
+min-width: 260px;
+min-height: 0;
+}
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col.content-wrap {
+z-index: 2;
+flex: 0 0 auto;
+}
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col .btn-wrap {
+padding-bottom: 16px;
+}
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col picture img {
+max-height: 100%;
+}
+@media screen and (min-width: 768px) {
+#iphone-se-on-us img {
+    height: 482px !important;
+    max-height: none !important;
+}
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid {
+    flex-flow: row !important;
+    display: flex !important;
+}
+[data-cmp=vzrf-promo-hero] .cmp-wrapper .Grid .Col {
+    min-width: 320px;
+}
+}
+@media screen and (min-width: 768px) {
+[data-cmp=vzrf-promo-hero][data-cmp-img-just=left] .cmp-wrapper .Grid {
+    flex-flow: row-reverse !important;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-img-just=left] .cmp-wrapper .Grid .Col {
+    flex-basis: 100%;
+}
+}
+@media screen and (min-width: 768px) {
+[data-cmp=vzrf-promo-hero][data-cmp-img-just=right] .cmp-wrapper .Grid .Col:not(.content-wrap) {
+    flex-basis: 100%;
+    max-width: none;
+}
+}
+[data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col {
+display: flex;
+justify-content: center;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col h1,
+[data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col h2,
+[data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col p,
+[data-cmp=vzrf-promo-hero][data-cmp-img-just=center] .cmp-wrapper .Grid .Col .btn-wrap {
+max-width: 750px !important;
+text-align: center !important;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-img-just=center][data-cmp-img-size=lifestyle] .cmp-wrapper .Grid .Col.content-wrap {
+width: 100%;
+align-items: center;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h1,
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h2 {
+font-size: 24px;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h1,
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h2,
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col p {
+max-width: 260px;
+}
+@media screen and (min-width: 768px) {
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h1,
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h2 {
+    font-size: 32px;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h1,
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col h2,
+[data-cmp=vzrf-promo-hero][data-cmp-header=regular] .cmp-wrapper .Grid .Col p {
+    max-width: 320px;
+}
+}
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h1,
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h2 {
+font-size: 32px;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h1,
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h2,
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col p {
+max-width: 300px;
+}
+@media screen and (min-width: 768px) {
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col {
+    display: flex;
+    justify-content: center;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h1,
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h2 {
+    max-width: none;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col p {
+    max-width: 320px;
+}
+}
+@media screen and (min-width: 991px) {
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h1,
+[data-cmp=vzrf-promo-hero][data-cmp-header=large] .cmp-wrapper .Grid .Col h2 {
+    font-size: 64px;
+}
+}
+@media screen and (min-width: 768px) {
+[data-cmp=vzrf-promo-hero][data-cmp-img-align-dt=center] .cmp-wrapper .Grid .Col picture {
+    height: 100%;
+    align-items: center;
+    display: flex !important;
+}
+}
+[data-cmp=vzrf-promo-hero][data-cmp-img-align-m=center] .cmp-wrapper .Grid .Col picture {
+height: 100%;
+align-items: center;
+display: flex !important;
+}
+@media screen and (min-width: 768px) {
+[data-cmp=vzrf-promo-hero][data-cmp-img-align-dt=bottom] .cmp-wrapper .Grid .Col picture img {
+    bottom: -21px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+}
+@media screen and (max-width: 767px) {
+[data-cmp=vzrf-promo-hero][data-cmp-img-align-m=bottom] .cmp-wrapper .Grid .Col picture img {
+    bottom: -16px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+}
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=white] .cmp-wrapper .Grid {
+background-color: #ffffff;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid {
+background-color: black;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid h1,
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid h2,
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid p,
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid a {
+color: white !important;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=black] .cmp-wrapper .Grid a {
+border-color: white !important;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=light-gray] .cmp-wrapper .Grid {
+background-color: #f6f6f6;
+}
+[data-cmp=vzrf-promo-hero][data-cmp-promo-bg-color=dark-gray] .cmp-wrapper .Grid {
+background-color: #d8d8d8;
+}
