@@ -13217,22 +13217,6 @@
 }
 }
 
-.u-alignTop {
-  vertical-align: top!important
-}
-
-.u-alignMiddle {
-  vertical-align: middle!important
-}
-
-.u-alignBottom {
-  vertical-align: bottom!important
-}
-
-.u-alignBaseline {
-  vertical-align: baseline!important
-}
-
 .u-colorPrimary {
   color: #000!important
 }
@@ -13385,30 +13369,3 @@
   background-color: #333!important
 }
 
-.u-displayBlock {
-  display: block!important
-}
-
-.u-displayInline {
-  display: inline!important
-}
-
-.u-displayFlex {
-  display: -webkit-box!important;
-  display: -webkit-flex!important;
-  display: -moz-box!important;
-  display: -ms-flexbox!important;
-  display: flex!important
-}
-
-.u-displayInlineBlock {
-  display: inline-block!important
-}
-
-.u-displayTable {
-  display: table!important
-}
-
-.u-displayTableCell {
-  display: table-cell!important
-}
