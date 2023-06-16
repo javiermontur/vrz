@@ -771,6 +771,7 @@ export default async function decorate(block) {
       <div class="gnav20-sticky-content"> 
         ${html}
       </div>
+      <div class="gnav20-sticky-header gnav20-with-promo gnav20-new-design"></div>
     `;
     
     const gNavRaw = gNav.querySelector('.gnav20-sticky-content');
