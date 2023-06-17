@@ -188,13 +188,19 @@ blockquote,dd,dl,dt,h1,h2,h3,h4,h5,h6,li,ol,p,ul {
 }
 
 /* Custom CSS */
-header { 
-  min-height: 68px;
+header:empty { 
+  min-height: 133px;
+}
+
+@media only screen and (min-width: 768px) {
+  header:empty { 
+    min-height: 123px;
+  }
 }
 
 @media only screen and (min-width: 991px) {
-  header { 
-    min-height: 120px;
+  header:empty { 
+    min-height: 165px;
   }
 }
 
