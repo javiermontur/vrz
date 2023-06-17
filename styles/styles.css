@@ -1,3 +1,11 @@
+body {
+  display: none;
+}
+
+body.appear {
+  display: unset;
+}
+
 /* below the fold CSS goes here */
 /*
   This CSS resource incorporates links to font software which is the valuable copyrighted
@@ -248,6 +256,16 @@ body {
 img {
   max-width: 100%;
   vertical-align: middle
+}
+
+header { 
+  min-height: 68px;
+}
+
+@media only screen and (min-width: 991px) {
+  header { 
+    min-height: 120px;
+  }
 }
 
 /* Custom CSS */

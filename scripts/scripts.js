@@ -44,14 +44,14 @@ function buildAutoBlocks(main) {
   }
 }
 
-function reDecorateMain(main) {
-  main.classList.add('main', 'responsivegrid', 'aem-GridColumn', 'aem-GridColumn--default--12');
-  // const container = document.createElement('div');
-  // container.classList.add('main-content', 'aem-Grid', 'aem-Grid--12', 'aem-Grid--default--12');
-  // container.innerHTML = main.innerHTML;
-  // main.innerHTML = '';
-  // main.prepend(container);
-}
+// function reDecorateMain(main) {
+//   main.classList.add('main', 'responsivegrid', 'aem-GridColumn', 'aem-GridColumn--default--12');
+//   // const container = document.createElement('div');
+//   // container.classList.add('main-content', 'aem-Grid', 'aem-Grid--12', 'aem-Grid--default--12');
+//   // container.innerHTML = main.innerHTML;
+//   // main.innerHTML = '';
+//   // main.prepend(container);
+// }
 
 /**
  * Decorates the main element.
@@ -63,7 +63,7 @@ export function decorateMain(main) {
   decorateButtons(main);
   decorateIcons(main);
   // buildAutoBlocks(main);
-  reDecorateMain(main);
+  // reDecorateMain(main);
   decorateSections(main);
   decorateBlocks(main);
 }
@@ -71,19 +71,19 @@ export function decorateMain(main) {
 /**
  * Set grid wrappers to header, body and footer.
  */
-export function decorateBody() {
-  const container = document.createElement('div');
-  container.classList.add('root', 'responsivegrid');
-  const subcontainer = document.createElement('div');
-  subcontainer.classList.add('aem-Grid', 'aem-Grid--12', 'aem-Grid--default--12');
+// export function decorateBody() {
+//   const container = document.createElement('div');
+//   container.classList.add('root', 'responsivegrid');
+//   const subcontainer = document.createElement('div');
+//   subcontainer.classList.add('aem-Grid', 'aem-Grid--12', 'aem-Grid--default--12');
 
-  [...document.body.children].forEach(node => {
-    subcontainer.appendChild(node);
-  });
+//   [...document.body.children].forEach(node => {
+//     subcontainer.appendChild(node);
+//   });
 
-  container.appendChild(subcontainer);
-  document.body.appendChild(container);
-}
+//   container.appendChild(subcontainer);
+//   document.body.appendChild(container);
+// }
 
 /**
  * Loads everything needed to get to LCP.
@@ -92,7 +92,7 @@ export function decorateBody() {
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
-  decorateBody();
+  // decorateBody();
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);
