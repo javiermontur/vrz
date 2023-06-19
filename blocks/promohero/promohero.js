@@ -52,11 +52,11 @@ export default async function decorate(block) {
           <p class="u-fontDisplay u-textLineHeightExtraTight u-text--xs16 u-text--md u-text--lg20 u-marginBottom--xs24 u-marginBottom--lg32 u-textRegular u-textLeft  ">
             ${text.innerHTML}
             ${tooltip ? `
-            <span class="tooltip">&ZeroWidthSpace;
+            <!--span class="tooltip">&ZeroWidthSpace;
               <span class="vzrf-tooltip" data-tooltip-content="${tooltip.innerHTML}" data-tooltip-type="icon" data-aria-label="" data-cmp-vzrf-initialized="true">
                 <button class="Icon Icon--info u-textDecorationNone u-text--xs14 u-text--lg16" tabindex="0" aria-describedby="vzrf-tooltip-temp" aria-expanded="false" aria-label=""></button>
               </span>
-            </span>
+            </span-->
             ` : ``}
           </p>
         `:``}
