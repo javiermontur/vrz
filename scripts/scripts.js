@@ -14,7 +14,7 @@ import {
   loadScript
 } from './lib-franklin.js';
 
-const LCP_BLOCKS = ['tabnav', 'promohero']; // add your LCP blocks to the list
+const LCP_BLOCKS = ['tabnav', 'promohero', 'promohero']; // add your LCP blocks to the list
 
 
 /**
