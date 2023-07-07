@@ -32,8 +32,6 @@ export default async function decorate(block) {
       picture = columns[0].querySelector('picture');
     }
 
-    console.log(typeTextThenImg,h1,h2,text,tooltip,picture)
-    
     colText = `
       <div class="Col Col--xs12 Col--md6 Col--lg6 u-positionRelative--xs u-positionRelative--md content-wrap">
         <div class="headlineWrap u-marginBottom--xs16 u-marginBottom--lg20">
