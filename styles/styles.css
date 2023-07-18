@@ -636,6 +636,10 @@ dd {
   touch-action: manipulation
 }
 
+.Button.Button--transparent,a.Button.Button--transparent,button.Button--transparent {
+  background-color: rgba(0,0,0,0)!important
+}
+
 .Button.disabled,.Button.is-disabled,.Button[disabled],a.Button.disabled,a.Button.is-disabled,a.Button[disabled],button.disabled,button.is-disabled,button[disabled] {
   pointer-events: none;
   cursor: not-allowed;
@@ -831,10 +835,6 @@ dd {
 .Button.Button--block,a.Button.Button--block,button.Button--block {
   display: block;
   width: 100%
-}
-
-.Button.Button--transparent,a.Button.Button--transparent,button.Button--transparent {
-  background-color: rgba(0,0,0,0)!important
 }
 
 .Grid {
