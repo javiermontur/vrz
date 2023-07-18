@@ -578,7 +578,7 @@ export function decorateButtons(element) {
           a.className = 'Button Button--secondary Button--transparent u-fontDisplay u-textBreakNoWrap u-marginBottom--xs0';
           twoup.classList.add('btn-wrap');
         }
-        if (up.childNodes.length === 1 && p.tagName === 'LI'
+        if (up.childNodes.length === 1 && up.tagName === 'LI'
           && twoup.childNodes.length === 1 && twoup.tagName === 'OL') {
           a.className = 'Button Button--cta u-textBreakNoWrap';
           twoup.classList.add('btn-wrap');
