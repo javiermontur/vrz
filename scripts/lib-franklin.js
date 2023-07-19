@@ -557,6 +557,7 @@ export function decorateTemplateAndTheme() {
  * @param {Element} element container element
  */
 export function decorateButtons(element) {
+  console.log('element', element);
   element.querySelectorAll('a').forEach((a) => {
     a.title = a.title || a.textContent;
     if (a.href !== a.textContent) {
@@ -564,29 +565,24 @@ export function decorateButtons(element) {
       const twoup = a.parentElement.parentElement;
       const threeup = a.parentElement.parentElement.parentElement;
       if (!a.querySelector('img')) {
-        if (up.childNodes.length === 1 && (up.tagName === 'P' || up.tagName === 'DIV')) {
-          a.className = 'Button Button--primary Button--transparent u-fontDisplay u-textBreakNoWrap u-marginBottom--xs0'; // default
+        if (up.children.length === 1 && (up.tagName === 'P' || up.tagName === 'DIV')) {
+          a.className = 'Button u-fontDisplay u-textBreakNoWrap u-marginBottom--xs0'; // default
           up.classList.add('btn-wrap');
         }
         if (up.childNodes.length === 1 && up.tagName === 'STRONG'
           && twoup.childNodes.length === 1 && twoup.tagName === 'P') {
-          a.className = 'Button Button--primary Button--transparent u-fontDisplay u-textBreakNoWrap u-marginBottom--xs0';
-          twoup.classList.add('btn-wrap');
-        }
-        if (up.childNodes.length === 1 && up.tagName === 'EM'
-          && twoup.childNodes.length === 1 && twoup.tagName === 'P') {
           a.className = 'Button Button--secondary Button--transparent u-fontDisplay u-textBreakNoWrap u-marginBottom--xs0';
           twoup.classList.add('btn-wrap');
         }
-        if (up.childNodes.length === 1 && up.tagName === 'LI'
-          && twoup.childNodes.length === 1 && twoup.tagName === 'OL') {
-          a.className = 'Button Button--cta u-textBreakNoWrap';
+        if (up.children.length === 1 && up.tagName === 'EM'
+          && twoup.children.length === 1 && twoup.tagName === 'P') {
+          a.className = 'Button Button--secondaryInverse Button--transparent u-textBreakNoWrap u-marginBottom--xs0';
           twoup.classList.add('btn-wrap');
         }
-        if (up.childNodes.length === 1 && up.tagName === 'EM'
-          && twoup.childNodes.length === 1 && twoup.tagName === 'STRONG'
-          && threeup.childNodes.length === 1) {
-          a.className = 'Button Button--secondaryInverse Button--transparent u-textBreakNoWrap u-marginBottom--xs48 u-marginBottom--lg0';
+        if (up.children.length === 1 && up.tagName === 'EM'
+          && twoup.children.length === 1 && twoup.tagName === 'STRONG'
+          && threeup.children.length === 1) {
+          a.className = 'Button Button--cta u-textBreakNoWrap';
           threeup.classList.add('btn-wrap');
         }
       }
