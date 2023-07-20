@@ -11,7 +11,8 @@ sampleRUM('cwv');
 //<script type="text/javascript" src="//assets.adobedtm.com/2ea7ee22c8c2/ece9aa9bcf6f/launch-72284e178e44.min.js" data-airgap-id="95"></script>
 loadScript('../../vendors/jquery.min.js').then(() => {
   loadScript('../../vendors/slick.min.js').then(() => {
-      $('[data-slick]').slick();
+    const slider = $('[data-slick]');
+    slider.slick(slider.data.slick);
   })
 });
 
