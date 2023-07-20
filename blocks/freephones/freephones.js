@@ -118,11 +118,5 @@ export default async function decorate(block) {
     </div>
     `;
     expFrag.querySelector('.grid').append(decoratedContent);
-
-    loadScript('../../vendors/jquery.js').then(() => {
-      loadScript('../../vendors/slick.js').then(() => {
-          $('[data-slick]').slick();
-      })
-    });
   }
 }
