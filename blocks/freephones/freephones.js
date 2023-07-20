@@ -52,7 +52,7 @@ export default async function decorate(block) {
                   </p>
                   <div class="Bar Bar--secondary u-paddingTop--10 u-paddingBottom--0 u-marginTop--4">
                     <h3 class="u-fontDisplay u-textRegular u-textLineHeightTight u-colorPrimary u-text--xs16 u-text--lg20 u-marginBottom--8">
-                      <span class="u-colorPrimary u-textDecorationNone u-displayBlock u-showForMediumUp" aria-label="Apple iPhone 12 (Certified Pre-Owned) Buy now">
+                      <span class="u-colorPrimary u-textDecorationNone u-displayBlock u-showForMediumUp" aria-label="${productTitle.innerHTML}">
                         ${productTitle.innerHTML}
                       </span>
                     </h3>
