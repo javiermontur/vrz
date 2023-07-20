@@ -1,5 +1,15 @@
 /* slick */
 
+.freephones-container .text-side-carousel {
+  height: 587px;
+  overflow: hidden;
+}
+
+.freephones-container .text-side-carousel.slick-initialized {
+  height: auto;
+  overflow: auto;
+}
+
 .slick-slider {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -109,7 +119,7 @@
 
 .slick-arrow {
   position: absolute;
-  font-size: 44px;
+  font-size: 14px;
   z-index: 100;
   top: 0;
   -webkit-transform: translateX(-16px);
