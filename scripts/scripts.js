@@ -16,7 +16,6 @@ import {
 
 const LCP_BLOCKS = ['fragment', 'promohero', 'promohero']; // add your LCP blocks to the list
 
-
 /**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
@@ -129,7 +128,7 @@ async function loadLazy(doc) {
  */
 function loadDelayed() {
   // eslint-disable-next-line import/no-cycle
-  window.setTimeout(() => import('./delayed.js'), 3000);
+  window.setTimeout(() => import('./delayed.js'), 2000);
   // load anything that can be postponed to the latest here
 }
 
