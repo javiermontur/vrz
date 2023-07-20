@@ -9,7 +9,7 @@ export default async function decorate(block) {
     const title = block.querySelector('h2');
     const btn = block.querySelector('.btn-wrap a');
     const pTags = block.querySelectorAll(':scope > div > div + div > p');
-    console.log(pTags);
+
     const text = pTags[0];
     const image = pTags[1].querySelector('picture');
     image.classList.add('lozad');

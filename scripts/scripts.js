@@ -14,7 +14,7 @@ import {
   loadScript
 } from './lib-franklin.js';
 
-const LCP_BLOCKS = ['fragment', 'promohero', 'promohero']; // add your LCP blocks to the list
+const LCP_BLOCKS = ['navbar', 'promohero', 'promohero']; // add your LCP blocks to the list
 
 
 /**
@@ -117,7 +117,7 @@ async function loadLazy(doc) {
   loadHeader(doc.querySelector('header'));
   loadFooter(doc.querySelector('footer'));
 
-  loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
+  loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.min.css`);
   sampleRUM('lazy');
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));

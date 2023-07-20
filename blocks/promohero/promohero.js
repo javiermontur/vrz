@@ -1,4 +1,10 @@
+// import { 
+//   createOptimizedPicture
+// } from '../../scripts/lib-franklin.js';
+
 export default async function decorate(block) {
+  // const section = block.parentElement.parentElement;
+  // const hasEagerImage = section.dataset.hasEagerImage && section.dataset.hasEagerImage === 'true';
   const columns = block.querySelectorAll(':scope > div > div');
 
   if (columns.length == 2) {
@@ -31,6 +37,14 @@ export default async function decorate(block) {
       cta = columns[1].querySelector('.btn-wrap');
       picture = columns[0].querySelector('picture');
     }
+    // const picImg = picture.querySelector('img');
+    // const optimizedPic = createOptimizedPicture(
+    //   picImg.alt, 
+    //   picImg.src, 
+    //   hasEagerImage, 
+    //   [{ media: '(min-width: 768px)', width: '715' }, { media: '(min-width: 320px)', width: '530' }]
+    // );
+    // optimizedPic.classList.add('u-displayInlineBlock');
 
     colText = `
       <div class="Col Col--xs12 Col--md6 Col--lg6 u-positionRelative--xs u-positionRelative--md content-wrap">
