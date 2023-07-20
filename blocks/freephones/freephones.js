@@ -1,10 +1,10 @@
-import {
-  createOptimizedPicture
-} from '../../scripts/lib-franklin.js';
+// import {
+//   createOptimizedPicture
+// } from '../../scripts/lib-franklin.js';
 
 export default async function decorate(block) {
   const section = block.parentElement.parentElement;
-  const hasEagerImage = section.dataset.hasEagerImage && section.dataset.hasEagerImage === 'true';
+  // const hasEagerImage = section.dataset.hasEagerImage && section.dataset.hasEagerImage === 'true';
   const content = block.querySelectorAll(':scope > div');
 
   const titleText = content[0];
@@ -45,12 +45,12 @@ export default async function decorate(block) {
               const promoTextList = product.querySelectorAll('ul li');
               const promoCta = product.querySelector('.btn-wrap a');
               const productImage = product.querySelector('picture img');
-              const optimizedPic = createOptimizedPicture(
-                productImage.src, 
-                productImage.alt,
-                index == 0 && hasEagerImage, 
-                [{ media: '(min-width: 768px)', width: '715' }, { media: '(min-width: 320px)', width: '530' }]
-              );
+              // const optimizedPic = createOptimizedPicture(
+              //   productImage.src, 
+              //   productImage.alt,
+              //   index == 0 && hasEagerImage, 
+              //   [{ media: '(min-width: 768px)', width: '715' }, { media: '(min-width: 320px)', width: '530' }]
+              // );
               return `
               <div class="product-tile u-colorBackgroundSecondary u-paddingX--xs16 u-paddingX--lg20 u-paddingTop--md40 u-positionRelative">
                 <div class="product-info u-marginRight--md20 u-flex u-flexColumn u-flexJustifyEnd">
@@ -92,7 +92,7 @@ export default async function decorate(block) {
                   </div>
                 </div>
                 <div class="product-image">
-                  ${optimizedPic.outerHTML}
+                  ${productImage.outerHTML}
                 </div>
               </div>
               `
