@@ -1,9 +1,10 @@
 import {
-  loadScript
+  createOptimizedPicture
 } from '../../scripts/lib-franklin.js';
 
 export default async function decorate(block) {
-  const expFrag = block.parentElement.parentElement;
+  const section = block.parentElement.parentElement;
+  const hasEagerImage = section.dataset.hasEagerImage && section.dataset.hasEagerImage === 'true';
   const content = block.querySelectorAll(':scope > div');
 
   const titleText = content[0];
@@ -44,6 +45,12 @@ export default async function decorate(block) {
               const promoTextList = product.querySelectorAll('ul li');
               const promoCta = product.querySelector('.btn-wrap a');
               const productImage = product.querySelector('picture img');
+              const optimizedPic = createOptimizedPicture(
+                productImage.src, 
+                productImage.alt,
+                index == 0 && hasEagerImage, 
+                [{ media: '(min-width: 768px)', width: '715' }, { media: '(min-width: 320px)', width: '530' }]
+              );
               return `
               <div class="product-tile u-colorBackgroundSecondary u-paddingX--xs16 u-paddingX--lg20 u-paddingTop--md40 u-positionRelative">
                 <div class="product-info u-marginRight--md20 u-flex u-flexColumn u-flexJustifyEnd">
@@ -85,11 +92,7 @@ export default async function decorate(block) {
                   </div>
                 </div>
                 <div class="product-image">
-                  <picture class="lozad" data-iesrc="${productImage.src}" tabindex="-1">
-                    <source srcset="${productImage.src}"/>
-                    <source srcset="${productImage.src}" media="(min-width: 320px)"/>
-                    <img alt="${productTitle.textContent}">
-                  </picture>
+                  ${optimizedPic.outerHTML}
                 </div>
               </div>
               `
@@ -100,7 +103,7 @@ export default async function decorate(block) {
     </div>
     `;
 
-    expFrag.innerHTML = `
+    section.innerHTML = `
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
       <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
         <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">  
@@ -117,6 +120,6 @@ export default async function decorate(block) {
       </div>
     </div>
     `;
-    expFrag.querySelector('.grid').append(decoratedContent);
+    section.querySelector('.grid').append(decoratedContent);
   }
 }
